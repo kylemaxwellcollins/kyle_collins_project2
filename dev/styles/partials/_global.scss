@@ -1,0 +1,36 @@
+$black: #171717;
+$white: #f6f6f6;
+$accent: #f38d8d;
+$primary: #68b0c1;
+$primaryDark: #227284;
+$primaryLight: #b9dde7;
+
+@mixin primaryFont($size) {
+    font-family: 'Oswald', sans-serif;
+    color: $black;
+    font-size: $size * 1px;
+    font-size: ($size / 10) * 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@mixin secondaryFont($size) {
+    font-family: 'Cabin', serif;
+    color: $black;
+    font-size: $size * 1px;
+    font-size: ($size / 10) * 1rem;
+    line-height: 32px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1080px;
+    width:80%;
+    margin: 0 auto;
+}
+
+
+

@@ -1,0 +1,10 @@
+.footer {
+    background: $black;
+    text-align: center;
+    &__copyright {
+        @include secondaryFont(16);
+        color: $white;
+        padding: 5px;
+        margin: 0;
+    }
+}

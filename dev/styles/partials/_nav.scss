@@ -1,0 +1,25 @@
+.main-nav {
+    background: $primaryLight;
+
+    &__list {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__link-item {
+        @include primaryFont(18);
+        text-decoration: none;
+        padding: 10px 25px;
+        display: block;
+        &:hover {
+            color: $white;
+        }
+        &--logo {
+            @include primaryFont(35); 
+        }
+    }
+}
