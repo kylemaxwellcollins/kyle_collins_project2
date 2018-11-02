@@ -1,0 +1,50 @@
+.section {
+    background: $white;
+    &__heading {
+        @include primaryFont(25);
+    }
+    &__sub-heading {
+        @include primaryFont(25);
+    }
+    &__text {
+        @include secondaryFont(16);
+        margin: 20px 0;
+    }
+    &__inner {
+        padding: 80px 0;
+        &--whos-harper {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &__list-item {
+        list-style: none;
+    }
+}
+
+.text-container {
+    &__whos-harper {
+        width: 50%;
+    }
+}
+
+
+.overview__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    &-item {
+        width:50%;
+    }
+}
+
+
+// BUTTON STYLES
+
+.btn {
+    text-decoration: none;
+    @include primaryFont(16);
+    background: $accent;
+    padding: 10px 25px;
+    display: inline-block; 
+}
