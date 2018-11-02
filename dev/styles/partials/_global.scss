@@ -46,5 +46,25 @@ img {
     margin: 0 auto;
 }
 
+.icons {
+    font-size: 20px;
+    padding: 10px 30px;
+    // position: relative;
+    &::before {
+        
+    }
+}
+
+.fas::before {
+    content: "";
+    position: relative;
+    // left:10px;
+    // top: -10px;
+    background: $primaryLight;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
 
 
