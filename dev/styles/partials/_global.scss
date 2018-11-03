@@ -46,25 +46,28 @@ img {
     margin: 0 auto;
 }
 
+// ICONS STYLES
+
 .icons {
     font-size: 20px;
-    padding: 10px 30px;
-    // position: relative;
-    &::before {
-        
+    padding: 15px 30px;
+}
+
+// BUTTON STYLES
+
+.btn {
+    text-decoration: none;
+    @include primaryFont(20);
+    background: $accent;
+    padding: 10px 25px;
+    display: inline-block; 
+    &--left{
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
-.fas::before {
-    content: "";
-    position: relative;
-    // left:10px;
-    // top: -10px;
-    background: $primaryLight;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}
+
 
 
 
