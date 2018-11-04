@@ -1,5 +1,5 @@
 .section {
-    background: $white;
+    background: $white-shade;
     &__heading {
         @include primaryFont(42);
     }
@@ -10,11 +10,26 @@
         @include secondaryFont(20);
         margin: 20px 0;
     }
+
     &__inner {
         padding: 80px 0;
         &__whos-harper {
             display: flex;
             justify-content: flex-end;
+        }
+        &__overview {
+            .overview__list {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0;
+                list-style: none;
+
+                &-item {
+                    display: flex;
+                    width:50%;
+                    margin-bottom: 30px;
+                }
+            }
         }
         &__things {
             padding: 0;
@@ -24,6 +39,9 @@
             }
             &--start {
                 display: flex;
+            }
+            .things-item {
+                width: 50%;
             }
             .things__image {
                 object-fit: cover;
@@ -42,11 +60,16 @@
         }
         &__journey {
             display: flex;
-
             .journey__image {
                 box-shadow: 20px 20px $primaryDark;
                 margin: 70px 0 0 0;
-
+            }
+        }
+        &__gallery {
+            display: flex;
+            justify-content: space-between;
+            .image-container__gallery-item {
+                width: 30%;
             }
         }
     }
@@ -65,26 +88,5 @@
     &__journey {
         width: 70%;
         margin: 70px 0 20px 90px;
-        
-
     }
-}
-
-
-
-
-.overview__list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    list-style: none;
-
-    &-item {
-        display: flex;
-        width:50%;
-    }
-}
-
-.things-item {
-    width: 50%;
 }

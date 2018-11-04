@@ -16,7 +16,7 @@
         padding: 10px 25px;
         display: block;
         &:hover {
-            color: $white;
+            color: $white-shade;
         }
         &--logo {
             @include primaryFont(42); 

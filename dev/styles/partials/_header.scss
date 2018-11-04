@@ -2,25 +2,26 @@
     display: flex;
     background: $primaryLight;
     height: 65vh;
-
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-}
-
-.header__profile-image {
-    min-width: 400px;
-    width: 40%;
-    position: relative;
-    top: 10%;
-}
-
-.header__hero-text {
-    @include primaryFont(100);
-    margin: 7%;
-    // &::after {
-    //    content: url('/assets/Circle\ text.png')
-    // }
+    .main-header {
+        display: flex;
+        align-items: center;
+        &__profile-image {
+            min-width: 400px;
+            width: 40%;
+            position: relative;
+            top: 10%;
+        }
+        &__hero-text {
+            @include primaryFont(140);
+            margin: 7%;
+            position: relative;
+            &::after {
+               content: url('/assets/circle-text.png');
+               position: absolute;
+               top: -10%;
+               left: 72%;
+              
+            }
+        }
+    }
 }

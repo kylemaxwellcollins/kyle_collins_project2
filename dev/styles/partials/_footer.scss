@@ -1,9 +1,9 @@
 .footer {
-    background: $black;
+    background: $black-shade;
     text-align: center;
     &__copyright {
         @include secondaryFont(16);
-        color: $white;
+        color: $white-shade;
         padding: 5px;
         margin: 0;
     }
