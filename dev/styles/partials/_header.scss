@@ -1,15 +1,17 @@
 .header--main {
     display: flex;
+    align-items: center;
     background: $primaryLight;
-    height: 65vh;
+    height: 70vh;
     .main-header {
         display: flex;
+        justify-content: center;
         align-items: center;
         &__profile-image {
-            min-width: 400px;
             width: 40%;
+            box-shadow: 20px 20px white;
             position: relative;
-            top: 10%;
+            top: 40px;
         }
         &__hero-text {
             @include primaryFont(140);
@@ -20,8 +22,28 @@
                position: absolute;
                top: -10%;
                left: 72%;
-              
             }
         }
     }
+}
+
+.header {
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    &--blog{
+        background: url('/assets/blog-image-1.jpg')
+    }
+    &--contact {
+        background: url('/assets/contact-image-1.jpg');
+    }
+    &__heading {
+        @include primaryFont(80);
+    }
+    &__content {
+        height: 56vh;
+        display: flex;
+        align-items: flex-end   
+    }
+
 }
