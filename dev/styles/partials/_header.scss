@@ -29,8 +29,9 @@
 
 .header {
     height: 50vh;
-    background-position: center;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     &--blog{
         background: url('/assets/blog-image-1.jpg')
     }
@@ -41,7 +42,7 @@
         @include primaryFont(80);
     }
     &__content {
-        height: 56vh;
+        height: 57vh;
         display: flex;
         align-items: flex-end   
     }

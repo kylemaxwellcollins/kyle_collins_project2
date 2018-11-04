@@ -46,17 +46,19 @@
     </header>
 
     <!-- MAIN STARTS HERE -->
-    <main class="main">
+    <main class="main section">
         <div class="wrapper">
             <section class="section__inner section__inner__contact">
-                <form class="form" action="" method="POST" name="contact-form">
-                    <input class="form__item form__info--small" type="text" placeholder="Name">
-                    <input class="form__item form__info--small" type="email" placeholder="Email address">
-                    <textarea class="form__item form__info--large" placeholder="Message" name="" id="" ></textarea>
-                    <button class="btn btn--large">submit</button>
-                </form>
+                <div class="side__main">
+                    <form class="form" action="" method="POST" name="contact-form">
+                        <input class="form__item form__info--small" type="text" placeholder="Name" required>
+                        <input class="form__item form__info--small" type="email" placeholder="Email address" required>
+                        <textarea class="form__item form__info--large" placeholder="Message" name="" id="" required></textarea>
+                        <button class="btn btn--large">submit</button>
+                    </form>
+                </div>
                 
-                <!-- <aside class="side">
+                <aside class="side side__contact">
                     <div class="side__social">
                         <a class="side__social__link" href="#"><i class="fab fa-facebook-f icons icons--side"></i></a>
                         <a class="side__social__link" href="#"><i class="fab fa-twitter icons icons--side"></i></a>
@@ -65,20 +67,33 @@
                     </div>
                     
                     <p class="section__text section__text--bold">
-                        <a href="#" >info@email.com</a>
+                        <a href="#" class="side__email"></a>info@email.com</a>
                     </p>
-                </aside> -->
+
+                    <ul class="section__text side__list">
+                        <li class="side__list__item">
+                            123 - 456 - 7890
+                        </li>
+                        <li class="side__list__item">
+                            123 Queen Street West, Unit 10
+                        </li>
+                        <li class="side__list__item">
+                            Toronto Ontario
+                        </li>
+                        <li class="side__list__item">
+                            M5V2D5
+                        </li>
+                    </ul>
+                </aside>
             </section>
         </div>
-
-
     </main>
 
     <!-- FOOTER STARTS HERE -->
     <footer class="footer">
-        <!-- <p class="footer__copyright">
+        <p class="footer__copyright">
             Copyright &copy; 2018 HackerYou
-        </p> -->
+        </p>
     </footer>
 
 
