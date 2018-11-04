@@ -10,7 +10,6 @@
         @include secondaryFont(20);
         margin: 20px 0;
     }
-
     &__inner {
         padding: 80px 0;
         &__whos-harper {
@@ -100,7 +99,6 @@
 
 .side {
     width: 33%;
-    
     &__section {
         padding: 30px 30px;
         background: white;
@@ -108,7 +106,6 @@
         &__image {
             padding-bottom: 20px;
         }
-
     }
     &__list {
         padding: 0;
@@ -151,7 +148,6 @@
             @include secondaryFont(18);
             border: none;
             padding: 10px 15px;
-    
         }
         &__info--small {
             flex-grow: 1;
@@ -167,10 +163,8 @@
             resize: none;
             &:hover {
                 resize: vertical
-            }
-          
+            } 
        }
     }
-
 }
 
