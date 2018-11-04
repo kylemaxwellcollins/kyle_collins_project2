@@ -25,15 +25,6 @@
             &--start {
                 display: flex;
             }
-            .text-container__things {
-                padding: 70px 0 20px 90px;
-                &--right {
-                    padding: 70px 70px 20px 0;
-                }    
-            }
-
-            
-
             .things__image {
                 object-fit: cover;
                 height:100%;
@@ -47,15 +38,17 @@
                     top: 40px;
                     box-shadow: 20px 20px $primaryLight, 200px 20px $primaryLight;
                 }
+            } 
+        }
+        &__journey {
+            display: flex;
+
+            .journey__image {
+                box-shadow: 20px 20px $primaryDark;
+                margin: 70px 0 0 0;
 
             }
-        
-
-          
         }
-    }
-    &__list-item {
-        list-style: none;
     }
 }
 
@@ -63,11 +56,22 @@
     &__whos-harper {
         width: 50%;
     }
+    &__things {
+        margin: 70px 0 20px 90px;
+        &--right {
+            margin: 30px 70px 70px 0;;
+        }    
+    }
+    &__journey {
+        width: 70%;
+        margin: 70px 0 20px 90px;
+        
+
+    }
 }
 
-.image-container {
 
-}
+
 
 .overview__list {
     display: flex;
