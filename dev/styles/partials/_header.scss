@@ -9,6 +9,7 @@
         align-items: center;
         &__profile-image {
             width: 40%;
+            max-width: 450px;
             box-shadow: 20px 20px white;
             position: relative;
             top: 40px;
