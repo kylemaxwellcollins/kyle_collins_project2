@@ -34,10 +34,10 @@
     background-position: center;
     background-repeat: no-repeat;
     &--blog{
-        background: url('/assets/blog-image-1.jpg')
+        background-image: url('/assets/blog-image-1.jpg');
     }
     &--contact {
-        background: url('/assets/contact-image-1.jpg');
+        background-image: url('/assets/contact-image-1.jpg');
     }
     &__heading {
         @include primaryFont(80);
