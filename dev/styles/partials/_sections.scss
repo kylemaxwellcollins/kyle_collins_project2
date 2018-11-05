@@ -122,6 +122,7 @@
         }
     }
     &__email {
+        @include primaryFont(18);
         text-decoration: none;
         color: $black-shade;
     }
