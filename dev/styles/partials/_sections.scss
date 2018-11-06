@@ -100,6 +100,15 @@
     }
     &__overview {
         padding-left: 20px;
+        &__links {
+            text-decoration: none;
+            color: $black-shade;
+            &:hover {
+                border-bottom: 3px solid $primaryLight;
+
+                text-shadow: 4px 4px 0px $primaryLight;
+            }
+        }
     }
     &__journey {
         width: 70%;
@@ -194,6 +203,7 @@
     .section {
         &__inner {
             &__overview {
+                padding-bottom: 30px;
                 .overview__list-item {
                     width: 100%;
                 }
@@ -211,17 +221,18 @@
                 .things__image {
                     top:0;
                     width:100%;
-                    // &--dark {
-                    //     top: 0;
-                    //     // margin: 0 auto;
-                    //     width:100%;
-                    // }
-                    // &--light {
-                    //     top: 0;
-                    //     // margin: 0 auto;
-                    //     width:
-                    // } 
                 }
+            }
+            &__journey {
+                display: block;
+                text-align: center;
+                .journey__image {
+                    box-shadow: 20px 20px $primaryDark;
+                    margin: 30px auto;
+                }
+            }
+            &__gallery {
+                padding: 40px 0;
             }
         }
     }
@@ -232,8 +243,13 @@
             padding: 0;
             &--right {
                 margin: 90px 0 70px 0;
-                // padding: 0 70px 0 0;
             }    
+        }
+        &__journey {
+            width: 100%;
+            margin: 70px auto auto;
         }
     }
 }
+
+

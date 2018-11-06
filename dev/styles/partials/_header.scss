@@ -30,7 +30,7 @@
 }
 
 .header {
-    height: 50vh;
+    height: 40vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@
         @include primaryFont(80);
     }
     &__content {
-        height: 57vh;
+        height: 47vh;
         display: flex;
         align-items: flex-end   
     }
@@ -62,12 +62,42 @@
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 530px) {
+
     .header--main{
+        background: url('/assets/home-image-1.jpg') center;   
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        .warpper {
+            width: 100%;
+        }
         .main-header{
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
             &__profile-image {
                 display: none;
             }
+            &__hero-text {
+                &::after {
+                    display: none;
+                }
+                @include primaryFont(110);
+                mix-blend-mode: lighten;
+                background-color: $primaryLight;
+                text-shadow: 1px 1px 1px $black-shade;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                padding-top: 160px;
+                margin: 0;
+            }
         }
+
     }
 }

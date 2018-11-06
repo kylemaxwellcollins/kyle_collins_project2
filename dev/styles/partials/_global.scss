@@ -70,9 +70,10 @@ img {
     background: $accent;
     padding: 10px 25px;
     display: inline-block; 
-    transition: background 0.4s;
+    transition: all 0.4s;
     &:hover {
         background: lighten($accent, 10);
+        box-shadow: 0px 2px 5px $black-shade;
     }
     &--left{
         display: flex;
@@ -81,6 +82,12 @@ img {
     &--large {
         flex-grow: 1;
         border: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
     }
 }
 
