@@ -76,6 +76,11 @@
             flex-direction: row-reverse;
             justify-content: space-between;
         }
+        &__blog {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -268,6 +273,9 @@
     .section {
         &__inner {
             &__contact {
+                flex-direction: column;
+            }
+            &__blog {
                 flex-direction: column-reverse;
             }
         }
@@ -298,7 +306,6 @@
             }
         }
         &__section {
-            // padding-bottom: 5px;
             &__image img {
             display: inline-block;
             }
@@ -341,7 +348,6 @@
         &__section {
             &__about {
                 flex-direction: column;
-                // text-align: center;
             }
         }
     }
