@@ -27,13 +27,6 @@
                     display: flex;
                     width:50%;
                     margin-bottom: 30px;
-                    // &--bullet{
-                    //     background: $primaryLight;
-                    //     display: flex;
-                    //     flex-direction: column;
-                    //     justify-content: start;
-
-                    // }
                 }
             }
         }
@@ -179,7 +172,7 @@
         }
         &__info--small {
             flex-grow: 1;
-            &:first-child {
+            &:nth-child(2) {
                 margin: 0 20px 0 0;
     
             }
@@ -262,7 +255,7 @@
         .form {
             &__info--small {
                 width: 100%;
-                &:first-child {
+                &:nth-child(2) {
                     margin: 0 0 20px 0;
         
                 }
@@ -275,7 +268,7 @@
     .section {
         &__inner {
             &__contact {
-                display: block;
+                flex-direction: column-reverse;
             }
         }
     }
@@ -299,14 +292,19 @@
         }
         &__blog {
             width: 100%;
-            text-align: center;
+            &__text {
+                padding-left: 30px;
 
+            }
         }
         &__section {
             // padding-bottom: 5px;
             &__image img {
             display: inline-block;
-             }
+            }
+            &__about {
+                display: flex;
+            }
         }
     }
 }
