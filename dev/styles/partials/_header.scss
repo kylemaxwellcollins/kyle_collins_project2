@@ -20,7 +20,7 @@
             margin: 7%;
             position: relative;
             &::after {
-               content: url('/assets/circle-text.png');
+               content: url('../../assets/circle-text.png');
                position: absolute;
                top: -10%;
                left: 72%;
@@ -35,10 +35,10 @@
     background-position: center;
     background-repeat: no-repeat;
     &--blog{
-        background-image: url('/assets/blog-image-1.jpg');
+        background-image: url('../../assets/blog-image-1.jpg');
     }
     &--contact {
-        background-image: url('/assets/contact-image-1.jpg');
+        background-image: url('../../assets/contact-image-1.jpg');
     }
     &__heading {
         @include primaryFont(80);
@@ -109,7 +109,7 @@
 
 @media (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
     .header--main{
-        background: url('/assets/home-image-1.jpg') center;   
+        background: url('../../assets/home-image-1.jpg') center;   
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -149,7 +149,7 @@
 
 @media (max-width: 530px) {
     .header--main{
-        background: url('/assets/home-image-1.jpg') center;   
+        background: url('../../assets/home-image-1.jpg') center;   
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
